@@ -28,9 +28,6 @@ def get_options():
     )
     return parser.parse_args()
 
-def new_sheet(name="unknown"):
-    return excel.add_worksheet(name)
-
 def format_output_data(instances):
     rows = []
     headers = ["id", "tags.Name", "state", "instance_type", "ip_address", "private_ip_address", \
@@ -72,7 +69,7 @@ if __name__ == '__main__':
             continue
     
         data = format_output_data(instances)
-        sheet = new_sheet(region_name)
+        sheet = excel.add_worksheet(region_name)
         write_excel(sheet, data)
     
     excel.close()
