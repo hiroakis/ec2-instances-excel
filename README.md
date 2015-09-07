@@ -14,7 +14,7 @@ Note: I did testing only Python 2.7.
 
 ## AWS Credentials
 
-Set AWS credential by environment variable or create `~/.boto`.
+Set AWS credential by environment variable or create `~/.boto`. The tool needs `ec2:Describe*` policy.
 
 * environment variable
 
