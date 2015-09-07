@@ -57,7 +57,6 @@ def write_excel(sheet, data):
     start_row = 3
     for i, row in enumerate(data):
         for j, val in enumerate(row):
-            # sheet.write(i+start_row, j, rows[i][j])
             sheet.write(i+start_row, j, val)
 
 if __name__ == '__main__':
