@@ -7,7 +7,7 @@ Output EC2 instances to Excel on all regions.
 ```
 git clone git@github.com:hiroakis/ec2-instances-excel.git
 cd ec2-instances-excel
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 Note: I did testing only Python 2.7.
