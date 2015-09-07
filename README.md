@@ -5,6 +5,8 @@ Output EC2 instances to Excel on all regions.
 ## Installation
 
 ```
+git clone git@github.com:hiroakis/ec2-instances-excel.git
+cd ec2-instances-excel
 pip install requirements.txt
 ```
 
