@@ -37,6 +37,7 @@ def format_output_data(instances):
         for i in instance.instances:
             row = [i.id, i.tags["Name"], i.state, i.instance_type, i.ip_address, i.private_ip_address, \
                     i.placement, i.vpc_id, i.subnet_id, i.image_id, i.monitored, i.launch_time, i.key_name]
+            row.insert(1,i.tags["Name"] if "Name" in i.tags else "No tags.Name")
         rows.append(row)
     return rows
 
